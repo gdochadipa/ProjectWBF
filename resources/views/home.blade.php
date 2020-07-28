@@ -3,26 +3,9 @@
     Home
 @endsection
 @section('component')
-<style>
-  .btn{
-    border-radius: 0;
-  }
-  .carousel-content {
-  position: absolute;
-  top: 40%;
-  left: 15%;
-  z-index: 20;
-  color: white;
-  text-shadow: 0 1px 2px rgba(0,0,0,.6);
-}
-.danger{
-  color: antiquewhite;
-  background-color:  #ED1B24;
-}
-</style>
+<link rel="stylesheet" href="{{asset('style/css/home_style.css')}}">
 <main role="main">
-<br>
-<br>
+
 <div id="carouselExampleControls" class="carousel slide " data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
@@ -48,13 +31,13 @@
     <span class="sr-only">Next</span>
   </a>
   <div class="carousel-content">
-        <h1 style="font-size: 75px">Welcome To <span class="text-info">WBF</span></h1>
-        <p class="p-1 danger text-white" style="width: 60%;"><i>WORLD BRAND FASION, KUTA - BALI</i></p>
+        <h1 class="title">Welcome To <span class="text-info">WBF</span></h1>
+        <p class="p-1 danger text-white" style="font-size: 20px"><i>WORLD BRAND FASION, KUTA - BALI</i></p>
       </div>
 </div>
-<div class="container py-5 h-100">
+<div class="container py-5 my-5 h-100">
   <div class="row text-center justify-content-center">
-    <h1 class="">
+    <h1 class="caption">
       NEW ARRIVALS
     </h1>
   </div>
@@ -67,94 +50,88 @@
   <div class="row">
     <div class="owl-carousel owl-theme">
       <div class="item">
-        <div class="card mb-4 shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+        <div class="card mb-4 mx-1 border-1">
+            <div class="card-head m-2 border-bottom">
+              <img src="{{asset('asset/item1.png')}}" class="bd-placeholder-img card-img-top"  width="100%" height="290" alt="">
+              <button class="btn btn-black" style="width: 100%" >READ MORE</button>
+              <p class="stock mt-3">In Stock:</p>
+            </div>
             <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-muted">9 mins</small>
-              </div>
+              <p class="item-title">COLLAR WOOL JACKET</p>
+              <p class="item-category">Men, Jacket</p>
+              <h3 class="price">IDR 500.000</h3>
             </div>
           </div>
       </div>
       <div class="item">
-        <div class="card mb-4 shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+        <div class="card mb-4 mx-1 border-1">
+            <div class="card-head m-2 border-bottom">
+              <img src="{{asset('asset/item1.png')}}" class="bd-placeholder-img card-img-top"  width="100%" height="290" alt="">
+              <button class="btn btn-black" style="width: 100%" >READ MORE</button>
+              <p class="stock mt-3">In Stock:</p>
+            </div>
             <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-muted">9 mins</small>
-              </div>
+              <p class="item-title">COLLAR WOOL JACKET</p>
+              <p class="item-category">Men, Jacket</p>
+              <h3 class="price">IDR 500.000</h3>
             </div>
           </div>
       </div>
       <div class="item">
-        <div class="card mb-4 shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+        <div class="card mb-4 mx-1 border-1">
+            <div class="card-head m-2 border-bottom">
+              <img src="{{asset('asset/item1.png')}}" class="bd-placeholder-img card-img-top"  width="100%" height="290" alt="">
+              <button class="btn btn-black" style="width: 100%" >READ MORE</button>
+              <p class="stock mt-3">In Stock:</p>
+            </div>
             <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-muted">9 mins</small>
-              </div>
+              <p class="item-title">COLLAR WOOL JACKET</p>
+              <p class="item-category">Men, Jacket</p>
+              <h3 class="price">IDR 500.000</h3>
             </div>
           </div>
       </div>
       <div class="item">
-        <div class="card mb-4 shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+        <div class="card mb-4 mx-1 border-1">
+            <div class="card-head m-2 border-bottom">
+              <img src="{{asset('asset/item1.png')}}" class="bd-placeholder-img card-img-top"  width="100%" height="290" alt="">
+              <button class="btn btn-black" style="width: 100%" >READ MORE</button>
+              <p class="stock mt-3">In Stock:</p>
+            </div>
             <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-muted">9 mins</small>
-              </div>
+              <p class="item-title">COLLAR WOOL JACKET</p>
+              <p class="item-category">Men, Jacket</p>
+              <h3 class="price">IDR 500.000</h3>
             </div>
           </div>
       </div>
       <div class="item">
-        <div class="card mb-4 shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+        <div class="card mb-4 mx-1 border-1">
+            <div class="card-head m-2 border-bottom">
+              <img src="{{asset('asset/item1.png')}}" class="bd-placeholder-img card-img-top"  width="100%" height="290" alt="">
+              <button class="btn btn-black" style="width: 100%" >READ MORE</button>
+              <p class="stock mt-3">In Stock:</p>
+            </div>
             <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-muted">9 mins</small>
-              </div>
+              <p class="item-title">COLLAR WOOL JACKET</p>
+              <p class="item-category">Men, Jacket</p>
+              <h3 class="price">IDR 500.000</h3>
             </div>
           </div>
       </div>
       <div class="item">
-        <div class="card mb-4 shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-muted">9 mins</small>
-              </div>
+        <div class="card mb-4 mx-1 border-1">
+            <div class="card-head m-2 border-bottom">
+              <img src="{{asset('asset/item1.png')}}" class="bd-placeholder-img card-img-top"  width="100%" height="290" alt="">
+              <button class="btn btn-black" style="width: 100%" >READ MORE</button>
+              <p class="stock mt-3">In Stock:</p>
             </div>
-          </div>
+            <div class="card-body">
+              <p class="item-title">COLLAR WOOL JACKET</p>
+              <p class="item-category">Men, Jacket</p>
+              <h3 class="price">IDR 500.000</h3>
+            </div>
+        </div>
       </div>
     </div>
   </div>
@@ -179,9 +156,9 @@
     </div>
 </div>
 
-<div class="container py-5 h-100">
+<div class="container py-5  h-100">
   <div class="row text-center justify-content-center">
-    <h1 class="">
+    <h1 class="caption">
       FOR YOU
     </h1>
   </div>
@@ -194,140 +171,173 @@
     <div class="container">
 
       <div class="row">
-        <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+        <div class="col-md-3">
+          <div class="card mb-4 mx-1 border-1">
+            <div class="card-head m-2 border-bottom">
+              <img src="{{asset('asset/item1.png')}}" class="bd-placeholder-img card-img-top"  width="100%" height="290" alt="">
+              <button class="btn btn-black" style="width: 100%" >READ MORE</button>
+              <p class="stock mt-3">In Stock:</p>
+            </div>
             <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-muted">9 mins</small>
-              </div>
+              <p class="item-title">COLLAR WOOL JACKET</p>
+              <p class="item-category">Men, Jacket</p>
+              <h3 class="price">IDR 500.000</h3>
             </div>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+        <div class="col-md-3">
+          <div class="card mb-4 mx-1 border-1">
+            <div class="card-head m-2 border-bottom">
+              <img src="{{asset('asset/item1.png')}}" class="bd-placeholder-img card-img-top"  width="100%" height="290" alt="">
+              <button class="btn btn-black" style="width: 100%" >READ MORE</button>
+              <p class="stock mt-3">In Stock:</p>
+            </div>
             <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-muted">9 mins</small>
-              </div>
+              <p class="item-title">COLLAR WOOL JACKET</p>
+              <p class="item-category">Men, Jacket</p>
+              <h3 class="price">IDR 500.000</h3>
             </div>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-muted">9 mins</small>
-              </div>
+        <div class="col-md-3">
+          <div class="card mb-4 mx-1 border-1">
+            <div class="card-head m-2 border-bottom">
+              <img src="{{asset('asset/item1.png')}}" class="bd-placeholder-img card-img-top"  width="100%" height="290" alt="">
+              <button class="btn btn-black" style="width: 100%" >READ MORE</button>
+              <p class="stock mt-3">In Stock:</p>
             </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
             <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-muted">9 mins</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-muted">9 mins</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-muted">9 mins</small>
-              </div>
+              <p class="item-title">COLLAR WOOL JACKET</p>
+              <p class="item-category">Men, Jacket</p>
+              <h3 class="price">IDR 500.000</h3>
             </div>
           </div>
         </div>
 
-        <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+        <div class="col-md-3">
+          <div class="card mb-4 mx-1 border-1">
+            <div class="card-head m-2 border-bottom">
+              <img src="{{asset('asset/item1.png')}}" class="bd-placeholder-img card-img-top"  width="100%" height="290" alt="">
+              <button class="btn btn-black" style="width: 100%" >READ MORE</button>
+              <p class="stock mt-3">In Stock:</p>
+            </div>
             <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-muted">9 mins</small>
-              </div>
+              <p class="item-title">COLLAR WOOL JACKET</p>
+              <p class="item-category">Men, Jacket</p>
+              <h3 class="price">IDR 500.000</h3>
             </div>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+        <div class="col-md-3">
+          <div class="card mb-4 mx-1 border-1">
+            <div class="card-head m-2 border-bottom">
+              <img src="{{asset('asset/item1.png')}}" class="bd-placeholder-img card-img-top"  width="100%" height="290" alt="">
+              <button class="btn btn-black" style="width: 100%" >READ MORE</button>
+              <p class="stock mt-3">In Stock:</p>
+            </div>
             <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-muted">9 mins</small>
-              </div>
+              <p class="item-title">COLLAR WOOL JACKET</p>
+              <p class="item-category">Men, Jacket</p>
+              <h3 class="price">IDR 500.000</h3>
             </div>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+        <div class="col-md-3">
+          <div class="card mb-4 mx-1 border-1">
+            <div class="card-head m-2 border-bottom">
+              <img src="{{asset('asset/item1.png')}}" class="bd-placeholder-img card-img-top"  width="100%" height="290" alt="">
+              <button class="btn btn-black" style="width: 100%" >READ MORE</button>
+              <p class="stock mt-3">In Stock:</p>
+            </div>
             <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-muted">9 mins</small>
-              </div>
+              <p class="item-title">COLLAR WOOL JACKET</p>
+              <p class="item-category">Men, Jacket</p>
+              <h3 class="price">IDR 500.000</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card mb-4 mx-1 border-1">
+            <div class="card-head m-2 border-bottom">
+              <img src="{{asset('asset/item1.png')}}" class="bd-placeholder-img card-img-top"  width="100%" height="290" alt="">
+              <button class="btn btn-black" style="width: 100%" >READ MORE</button>
+              <p class="stock mt-3">In Stock:</p>
+            </div>
+            <div class="card-body">
+              <p class="item-title">COLLAR WOOL JACKET</p>
+              <p class="item-category">Men, Jacket</p>
+              <h3 class="price">IDR 500.000</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card mb-4 mx-1 border-1">
+            <div class="card-head m-2 border-bottom">
+              <img src="{{asset('asset/item1.png')}}" class="bd-placeholder-img card-img-top"  width="100%" height="290" alt="">
+              <button class="btn btn-black" style="width: 100%" >READ MORE</button>
+              <p class="stock mt-3">In Stock:</p>
+            </div>
+            <div class="card-body">
+              <p class="item-title">COLLAR WOOL JACKET</p>
+              <p class="item-category">Men, Jacket</p>
+              <h3 class="price">IDR 500.000</h3>
+            </div>
+        </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card mb-4 mx-1 border-1">
+            <div class="card-head m-2 border-bottom">
+              <img src="{{asset('asset/item1.png')}}" class="bd-placeholder-img card-img-top"  width="100%" height="290" alt="">
+              <button class="btn btn-black" style="width: 100%" >READ MORE</button>
+              <p class="stock mt-3">In Stock:</p>
+            </div>
+            <div class="card-body">
+              <p class="item-title">COLLAR WOOL JACKET</p>
+              <p class="item-category">Men, Jacket</p>
+              <h3 class="price">IDR 500.000</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card mb-4 mx-1 border-1">
+            <div class="card-head m-2 border-bottom">
+              <img src="{{asset('asset/item1.png')}}" class="bd-placeholder-img card-img-top"  width="100%" height="290" alt="">
+              <button class="btn btn-black" style="width: 100%" >READ MORE</button>
+              <p class="stock mt-3">In Stock:</p>
+            </div>
+            <div class="card-body">
+              <p class="item-title">COLLAR WOOL JACKET</p>
+              <p class="item-category">Men, Jacket</p>
+              <h3 class="price">IDR 500.000</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card mb-4 mx-1 border-1">
+            <div class="card-head m-2 border-bottom">
+              <img src="{{asset('asset/item1.png')}}" class="bd-placeholder-img card-img-top"  width="100%" height="290" alt="">
+              <button class="btn btn-black" style="width: 100%" >READ MORE</button>
+              <p class="stock mt-3">In Stock:</p>
+            </div>
+            <div class="card-body">
+              <p class="item-title">COLLAR WOOL JACKET</p>
+              <p class="item-category">Men, Jacket</p>
+              <h3 class="price">IDR 500.000</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card mb-4 mx-1 border-1">
+            <div class="card-head m-2 border-bottom">
+              <img src="{{asset('asset/item1.png')}}" class="bd-placeholder-img card-img-top"  width="100%" height="290" alt="">
+              <button class="btn btn-black" style="width: 100%" >READ MORE</button>
+              <p class="stock mt-3">In Stock:</p>
+            </div>
+            <div class="card-body">
+              <p class="item-title">COLLAR WOOL JACKET</p>
+              <p class="item-category">Men, Jacket</p>
+              <h3 class="price">IDR 500.000</h3>
             </div>
           </div>
         </div>
@@ -337,17 +347,17 @@
 
 <div class="container py-5 h-100">
   <div class="row text-center justify-content-center">
-     <button type="button" class="btn danger btn-lg" style="width: 25%; height:30%"><span style="font-size: 15px"> SEE ALL PRODUCT  </span> </button>
+     <button type="button" class="btn danger btn-lg btn-see" style=""><span style="font-size: 15px"> SEE ALL PRODUCT  </span> </button>
   </div>
   <div class="row text-center justify-content-center">
     
   </div>
 </div>
 
-<div style="margin: 15px 0; background-image: url('{{asset('asset/banner2.png')}}');" class="img-fluid w-100 p-3 h-100 d-inline-block" >
+<div style="margin: 20px 0; background-image: url('{{asset('asset/banner2.png')}}');" class="img-fluid w-100 p-3 h-100 d-inline-block" >
 <div class="container py-5 h-100">
   <div class="row text-center justify-content-center">
-    <h1 style="color: antiquewhite">
+    <h1 style="color: antiquewhite" class="caption">
       BRANDS
     </h1>
   </div>

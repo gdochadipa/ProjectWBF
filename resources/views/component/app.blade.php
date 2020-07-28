@@ -11,39 +11,126 @@
     <link rel="stylesheet" href="{{asset('style/owl/owl.theme.default.min.css')}}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title> @yield('title')</title>
+    <style>
+      @font-face {
+        font-family: BarlowCondensed-ExtraBold;
+        src: url('{{asset('font/BarlowCondensed-ExtraBold.ttf')}}');
+      }
+
+      @font-face {
+        font-family: BarlowCondensed-BoldItalic;
+        src: url('{{asset('font/BarlowCondensed-BoldItalic.ttf')}}');
+      }
+
+      @font-face {
+        font-family: BarlowCondensed-Italic;
+        src: url('{{asset('font/BarlowCondensed-Italic.ttf')}}');
+      }
+
+      @font-face {
+        font-family: BarlowCondensed-Light;
+        src: url('{{asset('font/BarlowCondensed-Light.ttf')}}');
+      }
+
+      @font-face {
+        font-family: BarlowCondensed-Regular;
+        src: url('{{asset('font/BarlowCondensed-Regular.ttf')}}');
+      }
+
+      @font-face {
+        font-family: BarlowCondensed-Bold;
+        src: url('{{asset('font/BarlowCondensed-Bold.ttf')}}');
+      }
+
+      @font-face {
+        font-family: BarlowCondensed-Medium;
+        src: url('{{asset('font/BarlowCondensed-Medium.ttf')}}');
+      }
+      
+      h1{
+        font-family: BarlowCondensed-ExtraBold;
+      }
+
+      .title{
+        font-family: BarlowCondensed-BoldItalic;
+      }
+
+      .carousel-content p{
+      
+      font-family: BarlowCondensed-Italic;
+      }
+
+      .nav a{
+        font-size: 20px;
+        font-family: BarlowCondensed-Medium;
+        color: black !important;
+      }
+
+      .nav a:hover{
+        color: black !important;
+      }
+
+      .btn{
+        border-radius: 0;
+        font-family:  BarlowCondensed-Medium;
+        font-size: 20px;
+      }
+
+      .search{
+        color: black !important;
+        border: none;
+      }
+
+      .search:hover{
+        background-color: #F8F9FA !important;
+        border: none;
+      }
+
+      .card{
+        font-family: BarlowCondensed-Medium;
+      }
+
+      .item-category{
+        font-family: BarlowCondensed-Light;
+      }
+      .price{
+        font-family: BarlowCondensed-Regular;
+      }
+    </style>
   </head>
   <body>
-  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-    <a class="navbar-brand" href="#">Navbar</a>
+  <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
+    <a class="navbar-brand px-5 border-right" href="#"><img src="{{asset('asset/image.png')}}" alt=""></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse" id="navbarsExampleDefault">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <li class="nav-item nav mx-3">
+          <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+        <li class="nav-item nav mx-3">
+          <a class="nav-link" href="#">BRAND</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        <li class="nav-item nav mx-3">
+          <a class="nav-link" href="#">MEN</a>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-          <div class="dropdown-menu" aria-labelledby="dropdown01">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
+        <li class="nav-item nav mx-3">
+          <a class="nav-link" href="#">WOMAN</a>
+        </li>
+        <li class="nav-item nav mx-3">
+          <a class="nav-link" href="#">CHILD</a>
+        </li>
+        <li class="nav-item nav mx-3">
+          <a class="nav-link text-d"style="color:#ED1B24 !important" href="#">ON SALE</a>
         </li>
       </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
+      
     </div>
+    <form class="form-inline  mx-2 px-3 py-3  border-left">
+        <button class="btn btn-outline-success search" type="submit"><i class="fa fa-search" aria-hidden="true"></i> SEARCH</button>
+      </form>
 </nav>
 
     @yield('component')
