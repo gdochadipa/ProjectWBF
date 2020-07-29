@@ -46,6 +46,13 @@
         font-family: BarlowCondensed-Medium;
         src: url('{{asset('font/BarlowCondensed-Medium.ttf')}}');
       }
+
+      @font-face {
+        font-family: BarlowCondensed-ExtraLight;
+        src: url('{{asset('font/BarlowCondensed-ExtraLight.ttf')}}');
+      }
+
+      
       
       h1{
         font-family: BarlowCondensed-ExtraBold;
@@ -96,6 +103,36 @@
       .price{
         font-family: BarlowCondensed-Regular;
       }
+      .footer{
+        background-color: rgb(26, 26, 26) !important;
+        color: #F8F9FA !important;
+        
+      }
+
+      .footer h3{
+        font-family: BarlowCondensed-Medium;
+      }
+      .footer p{
+        font-family: BarlowCondensed-ExtraLight;
+        font-weight: 100;
+        font-size: 18px;
+      }
+
+      .cs{
+        display: inline;
+      }
+      .cs h5{
+        font-family: BarlowCondensed-Medium;
+      }
+
+      .cs p{
+        font-family: BarlowCondensed-ExtraLight;
+        font-weight: 100;
+      }
+      .cs .red{
+        font-family: BarlowCondensed-Medium;
+        color: #ED1B24;
+      }
     </style>
   </head>
   <body>
@@ -137,7 +174,64 @@
 
 <footer class="footer mt-auto py-3">
   <div class="container">
-    <span class="text-muted">Place sticky footer content here.</span>
+    <div class="row my-1  py-4 border-bottom">
+        <div class="col">
+          <h3>CATEGORIES</h3>
+          <p>Men</p>
+          <p>Woman</p>
+          <p>Child</p>
+        </div>
+        <div class="col">
+          <h3>QUICK LINKS</h3>
+          <p>Privacy Policy</p>
+          <p>Terms & Conditions</p>
+          
+        </div>
+        <div class="col">
+          <h3>COMPANY</h3>
+          <p>About Us</p>
+          <p>Shopping Guide</p>
+        </div>
+        <div class="col">
+          <div class="row row-cols-2">
+            <div class="col-3">
+              <img src="{{asset('asset/cs1.png')}}" alt="">
+            </div>
+            <div class="col-md-8 cs">
+                <h5 style="font-size: 17px !important">WE OFFER DEDICATED SUPPORT</h5>
+                <p>If you need support send us a message</p>
+              </div>
+          </div>
+          <div class="row row-cols-2">
+            <div class="col-3">
+              <img src="{{asset('asset/cs2.png')}}" alt="">
+            </div>
+            <div class="col-md-8 cs">
+                <p style="margin-bottom: 5px !important">Got Question? Call Us</p>
+                <h5 class="red">+087860155999</h5>
+              </div>
+          </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+          1 of 2
+        </div>
+        <div class="col">
+          2 of 2
+        </div>
+        <div class="col">
+          2 of 2
+        </div>
+        
+    </div>
+    <div class="row">
+        <div class="col">
+          1 of 2
+        </div>
+        
+        
+    </div>
   </div>
 </footer>
   </body>
