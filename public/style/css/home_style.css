@@ -8,17 +8,47 @@
      left: 12%;
      z-index: 20;
      color: white;
-     text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+ }
+
+ .brand-content {
+     position: absolute;
+     width: 95%;
+     bottom: -525%;
+     margin: 0px 20px;
+     z-index: 50;
  }
 
  .carousel-content h1 {
      font-size: 90px;
  }
 
+ .two-carousel .item img {
+     height: 100px;
+     width: 100%;
+     padding: 15px;
+     margin: 2px;
+ }
+
  .btn-see {
-     width: 25%;
+     width: 30%;
      height: 30%;
      font-size: 20px;
+ }
+
+ .btn-see:hover {
+     color: #ED1B24;
+     background-color: #F8F9FA;
+ }
+
+ .btn-go {
+     width: 150%;
+     height: 30%;
+     font-size: 20px;
+ }
+
+ .btn-see:hover {
+     color: #ED1B24;
+     background-color: #F8F9FA;
  }
 
  .carousel-content p {
@@ -72,8 +102,22 @@
      margin-bottom: 5px;
  }
 
- .item-image{
+ .item-image {
      width: 250px;
+ }
+
+ .caption {
+     font-size: 50px !important;
+ }
+
+ @media screen and (max-width: 1024px) {
+     .brand-content {
+         position: absolute;
+         width: 95%;
+         bottom: -185%;
+         margin: 0px 20px;
+         z-index: 50;
+     }
  }
 
  @media screen and (max-width: 992px) {
@@ -85,6 +129,8 @@
          color: white;
          text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
      }
+
+
 
      .carousel-content h1 {
          font-size: 50px;
@@ -105,6 +151,14 @@
 
      .carousel-content h1 {
          font-size: 35px;
+     }
+
+     .brand-content {
+         position: absolute;
+         width: 85%;
+         bottom: -958%;
+         margin: 0px 20px;
+         z-index: 50;
      }
 
      .carousel-content p {

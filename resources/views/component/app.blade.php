@@ -52,6 +52,11 @@
         src: url('{{asset('font/BarlowCondensed-ExtraLight.ttf')}}');
       }
 
+      @font-face {
+        font-family: BarlowCondensed-Thin;
+        src: url('{{asset('font/BarlowCondensed-Thin.ttf')}}');
+      }
+
       
       
       h1{
@@ -126,12 +131,36 @@
       }
 
       .cs p{
-        font-family: BarlowCondensed-ExtraLight;
+        font-family: BarlowCondensed-Thin;
         font-weight: 100;
+        font-size: 15px;
+        color: rgb(192, 192, 192);
+      }
+
+      .cs p i{
+        font-size: 20px;
+        margin: 0px 8px;
       }
       .cs .red{
         font-family: BarlowCondensed-Medium;
         color: #ED1B24;
+      }
+      
+      .border-bottom{
+        border-bottom: 0.05px solid #8d8d8d!important;
+      }
+      
+      /* .container{
+        max-width: 1250px;
+      } */
+
+      .banner h5{
+        font-family: BarlowCondensed-Medium;
+      }
+
+      .red-insta{
+        color:#ED1B24;
+        font-family: BarlowCondensed-Medium;
       }
     </style>
   </head>
@@ -173,66 +202,95 @@
     @yield('component')
 
 <footer class="footer mt-auto py-3">
-  <div class="container">
-    <div class="row my-1  py-4 border-bottom">
-        <div class="col">
-          <h3>CATEGORIES</h3>
-          <p>Men</p>
-          <p>Woman</p>
-          <p>Child</p>
+  <div class="border-bottom" >
+    <div class="container" >
+      <div class="row my-2  py-4 ">
+          <div class="col">
+            <h3>CATEGORIES</h3>
+            <p>Men</p>
+            <p>Woman</p>
+            <p>Child</p>
+          </div>
+          <div class="col">
+            <h3>QUICK LINKS</h3>
+            <p>Privacy Policy</p>
+            <p>Terms & Conditions</p>
+            
+          </div>
+          <div class="col">
+            <h3>COMPANY</h3>
+            <p>About Us</p>
+            <p>Shopping Guide</p>
+          </div>
+          <div class="col">
+            <div class="row row-cols-2">
+              <div class="col-3">
+                <img src="{{asset('asset/cs1.png')}}" alt="">
+              </div>
+              <div class="col-md-8 cs">
+                  <h5 style="font-size: 17px !important">WE OFFER DEDICATED SUPPORT</h5>
+                  <p>If you need support send us a message</p>
+                </div>
+            </div>
+            <div class="row row-cols-2">
+              <div class="col-3">
+                <img src="{{asset('asset/cs2.png')}}" alt="">
+              </div>
+              <div class="col-md-8 cs">
+                  <p style="margin-bottom: 5px !important">Got Question? Call Us</p>
+                  <h5 class="red">+087860155999</h5>
+                </div>
+            </div>
+          </div>
+      </div>
+  </div>
+  </div>
+  
+  <div class="border-bottom">
+    <div class="container">
+       <div class="row my-2  py-4 ">
+        <div class="col-3">
+          <img src="{{asset('asset/wbf_logo.png')}}" alt="">
         </div>
-        <div class="col">
-          <h3>QUICK LINKS</h3>
-          <p>Privacy Policy</p>
-          <p>Terms & Conditions</p>
+        <div class="col-md-5 cs">
+          <h5 style="font-size: 17px !important">STORE LOCATION</h5>
+          <p>Jl. By Pass Ngurah Rai No.11H, Kuta Badung 
+            <br>
+            Bali, Indonesia
+          </p>
+          <p><i class="fa fa-facebook" aria-hidden="true"></i>
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+            <i class="fa fa-youtube" aria-hidden="true"></i>
+            <i class="fa fa-google-plus-square" aria-hidden="true"></i>
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+          </p>
+          <p style="margin-bottom: 5px !important">Email: wbfkuta@gmail.com</p>
           
         </div>
-        <div class="col">
-          <h3>COMPANY</h3>
-          <p>About Us</p>
-          <p>Shopping Guide</p>
-        </div>
-        <div class="col">
-          <div class="row row-cols-2">
-            <div class="col-3">
-              <img src="{{asset('asset/cs1.png')}}" alt="">
-            </div>
-            <div class="col-md-8 cs">
-                <h5 style="font-size: 17px !important">WE OFFER DEDICATED SUPPORT</h5>
-                <p>If you need support send us a message</p>
-              </div>
-          </div>
-          <div class="row row-cols-2">
-            <div class="col-3">
-              <img src="{{asset('asset/cs2.png')}}" alt="">
-            </div>
-            <div class="col-md-8 cs">
-                <p style="margin-bottom: 5px !important">Got Question? Call Us</p>
-                <h5 class="red">+087860155999</h5>
-              </div>
-          </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col">
-          1 of 2
-        </div>
-        <div class="col">
-          2 of 2
-        </div>
-        <div class="col">
-          2 of 2
+        <div class="col cs">
+          <h5 style="font-size: 17px !important">PAYMENT</h5>
+          <p><img src="{{asset('asset/payment.png')}}" alt=""></p>
+          
         </div>
         
     </div>
-    <div class="row">
-        <div class="col">
-          1 of 2
-        </div>
-        
-        
+
+     </div>
     </div>
   </div>
+
+  
+
+   <div class="container">
+      <div class="row my-1 py-4 ">
+        <div class="row">
+          <div class="col copyright">
+            Copyright
+          </div>
+       </div>
+     </div>
+    </div>
+  
 </footer>
   </body>
   <script src="{{asset('style/js/jquery-3.5.1.slim.min.js')}}" ></script>
